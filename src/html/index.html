@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bert van Nimwegen</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/portfolio/css/main.css">
+        <script src="/portfolio/js/main.js"></script> 
+    </head>
+    <body>
+        @@include('_menu.html')
+        <div class='content' onclick='closeMenu()'>
+            <div class="profile">
+
+                <div class="profile-text">
+                    <h1>Bert van Nimwegen</h1>
+                    <h3>full stack developer</h3>
+                    <div class="profile-buttons">
+                        @@include('_buttons.html')
+                    </div>
+                </div>
+                <img class="profile-pic" src='/portfolio/img/photo.png'>
+
+            </div>
+            <div class="skills">
+                <a href="/portfolio/talen#java"><div class="skill"><img src="/portfolio/img/java.png"></div></a>
+                <a href="/portfolio/talen#python"><div class="skill"><img src="/portfolio/img/python.png"></div></a>
+                <a href="/portfolio/talen#csharp"><div class="skill"><img src="/portfolio/img/csharp.svg"></div></a>
+                <a href="/portfolio/talen#angularjs"><div class="skill"><img src="/portfolio/img/angular.svg"></div></a>
+            </div>
+        </div>
+        @@include('_footer.html')
+    </body>
+</html>

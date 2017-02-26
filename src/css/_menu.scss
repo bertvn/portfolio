@@ -1,0 +1,112 @@
+/* 
+    menu
+*/
+
+.menu{
+    position: -webkit-sticky;
+    position: sticky;
+    background-color: red;
+    top:0;
+    display:flex;
+    justify-content: space-around;
+    .item{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        font-weight: bold;
+        a:link {
+            text-decoration: inherit;
+            color: inherit;
+            //cursor: auto;
+        }
+
+        a:visited {
+            text-decoration: inherit;
+            color: inherit;
+            //cursor: auto;
+        }
+    }
+    .buttons{
+        display:none;
+    }
+}
+
+.menu-phone, .menu-button{
+    display: none;
+}
+
+@media screen and (max-width: 760px) {
+    .menu{
+        -webkit-transition: all 0.75s ease;
+        -moz-transition: all 0.75s ease;
+        -o-transition: all 0.75s ease;
+        transition: all 0.75s ease;
+        display:block;
+        position: absolute;
+        height: 100%;
+        left:0;
+        width:80%;
+        z-index: 3;
+
+
+
+        .item{
+            width: 100%;
+
+            float: none;
+            border-bottom: 1px solid black;
+            a{
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                width:100%;
+                height:100%;
+            }
+        }
+        .menu-button{
+            position:absolute;
+            right:0;
+            top:0;
+        }
+
+        .buttons{
+            display:block;
+            position: absolute;
+            bottom: 20px;
+            width:100%;
+            display:flex;
+            justify-content: space-around;
+            //align-items: center;
+            img{
+                width:25px;
+                height:25px;
+            }
+        }
+    }
+    .menu-button{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        height:50px;
+        width:50px;
+        background-color: red;
+        img{
+            height:25px;
+            width:25px;
+        }
+    }
+    .menu-phone{
+        display: block;
+        height: 100%;
+        width:50px;
+        position:absolute;
+        background-color: red;
+        z-index: 2;
+    }
+
+    .hide-menu{
+        margin-left: -1000px;
+    }
+
+}

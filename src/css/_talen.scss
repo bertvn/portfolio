@@ -1,0 +1,34 @@
+/*
+    talen
+*/
+.language{
+    .title{
+    }
+    .description{
+        width:100%;
+        overflow:hidden;
+        .text{
+            width:100%;
+        }
+        .ervaring{
+            width:25%;
+            float:left;
+        }
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .language{
+        .description{
+            .ervaring{
+                width: 50% !important;
+                ul{
+                    padding-left: 20px;
+                    li{
+                        padding-left: 0px;
+                    }
+                }
+            }
+        }
+    }
+}

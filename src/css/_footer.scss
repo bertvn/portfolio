@@ -1,0 +1,25 @@
+/*footer*/
+.footer{
+    text-align: center;
+}
+
+.menu-footer{
+    display: none;
+}
+
+@media screen and (max-width: 760px) {
+    .menu-footer{
+        display: block;
+        position: absolute;
+        bottom:5px;
+        width:100%;
+        .footer{
+            display: block;
+            font-size: xx-small;
+        }
+    }
+
+    .footer{
+        display:none;
+    }
+}

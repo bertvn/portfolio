@@ -1,0 +1,205 @@
+/* 
+    menu
+*/
+.menu {
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: red;
+  top: 0;
+  display: flex;
+  justify-content: space-around; }
+  .menu .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-weight: bold; }
+    .menu .item a:link {
+      text-decoration: inherit;
+      color: inherit; }
+    .menu .item a:visited {
+      text-decoration: inherit;
+      color: inherit; }
+  .menu .buttons {
+    display: none; }
+
+.menu-phone, .menu-button {
+  display: none; }
+
+@media screen and (max-width: 760px) {
+  .menu {
+    -webkit-transition: all 0.75s ease;
+    -moz-transition: all 0.75s ease;
+    -o-transition: all 0.75s ease;
+    transition: all 0.75s ease;
+    display: block;
+    position: absolute;
+    height: 100%;
+    left: 0;
+    width: 80%;
+    z-index: 3; }
+    .menu .item {
+      width: 100%;
+      float: none;
+      border-bottom: 1px solid black; }
+      .menu .item a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%; }
+    .menu .menu-button {
+      position: absolute;
+      right: 0;
+      top: 0; }
+    .menu .buttons {
+      display: block;
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      display: flex;
+      justify-content: space-around; }
+      .menu .buttons img {
+        width: 25px;
+        height: 25px; }
+  .menu-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    background-color: red; }
+    .menu-button img {
+      height: 25px;
+      width: 25px; }
+  .menu-phone {
+    display: block;
+    height: 100%;
+    width: 50px;
+    position: absolute;
+    background-color: red;
+    z-index: 2; }
+  .hide-menu {
+    margin-left: -1000px; } }
+
+/*
+    home
+*/
+.profile {
+  overflow: hidden;
+  display: flex;
+  align-items: center; }
+  .profile .profile-pic {
+    width: 150px;
+    max-width: 25%;
+    float: right; }
+  .profile .profile-text {
+    width: calc(100% - 150px);
+    min-width: 75%;
+    text-align: center; }
+    .profile .profile-text h1 {
+      font-family: "Times New Roman", Times, serif; }
+    .profile .profile-text .profile-buttons {
+      height: 50px;
+      display: flex;
+      justify-content: space-around; }
+      .profile .profile-text .profile-buttons img {
+        width: 50px; }
+
+.skills {
+  width: 100%;
+  padding-top: 10px;
+  margin: auto; }
+  .skills .skill {
+    width: 25%;
+    float: left;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6.25% 0;
+    box-sizing: border-box;
+    border: 1px solid white; }
+    .skills .skill img, .skills .skill object {
+      width: 50%; }
+
+@media screen and (max-width: 760px) {
+  .skills {
+    width: 80%; }
+    .skills .skill {
+      width: 50% !important;
+      padding: 12.5% 0 !important; }
+  .profile-buttons {
+    display: none !important; } }
+
+/*
+    talen
+*/
+.language .description {
+  width: 100%;
+  overflow: hidden; }
+  .language .description .text {
+    width: 100%; }
+  .language .description .ervaring {
+    width: 25%;
+    float: left; }
+
+@media screen and (max-width: 760px) {
+  .language .description .ervaring {
+    width: 50% !important; }
+    .language .description .ervaring ul {
+      padding-left: 20px; }
+      .language .description .ervaring ul li {
+        padding-left: 0px; } }
+
+/*footer*/
+.footer {
+  text-align: center; }
+
+.menu-footer {
+  display: none; }
+
+@media screen and (max-width: 760px) {
+  .menu-footer {
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    width: 100%; }
+    .menu-footer .footer {
+      display: block;
+      font-size: xx-small; }
+  .footer {
+    display: none; } }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-image: url("../img/bg.png");
+  height: 100%; }
+
+@media screen and (min-width: 761px) {
+  .content {
+    margin: auto;
+    max-width: 900px;
+    padding: 5px;
+    height: 100%;
+    overflow-y: auto;
+    box-sizing: border-box; }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column; }
+    body .content {
+      flex: 1; } }
+
+@media screen and (max-width: 760px) {
+  html {
+    height: 100%; }
+  body {
+    height: 100%; }
+  .content {
+    padding: 5px;
+    margin-left: 50px;
+    height: 100%;
+    overflow-y: auto;
+    box-sizing: border-box; } }

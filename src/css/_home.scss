@@ -1,0 +1,67 @@
+/*
+    home
+*/
+
+.profile{
+    overflow: hidden;
+    //height:200px;
+    display:flex;
+    align-items:center;
+    .profile-pic{
+        width: 150px;
+        max-width:25%;
+        //height:200px;
+        float:right;
+
+    }
+    .profile-text{
+        width: calc(100% - 150px);
+        min-width: 75%;
+        text-align: center;
+        h1{
+            font-family: "Times New Roman", Times, serif;
+        }
+        .profile-buttons{
+            height: 50px;
+            display: flex;
+            justify-content: space-around;
+            img{
+                width:50px;
+            }
+        }
+
+    }
+}
+
+.skills{
+    width:100%;
+    padding-top:10px;
+    margin: auto;
+    .skill{
+        width:25%;
+        float:left;
+        background-color: black;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        padding: 6.25% 0;
+        box-sizing:border-box;
+        border: 1px solid white;
+        img, object{
+            width:50%;
+        }
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .skills{
+        width:80%;
+        .skill{
+            width:50% !important;
+            padding: 12.5% 0 !important;
+        }
+    }
+    .profile-buttons{
+        display: none !important;
+    }
+}
