@@ -1,0 +1,46 @@
+/*work*/
+.work{
+    border:1px solid red;
+    width:100%;
+    overflow:hidden;
+    margin-bottom: 5px;
+    .logo{
+        float:left;
+        width:150px;
+        height:150px;
+        display:block;
+        position: relative;
+        margin-right:5px;
+        .logo-img{
+            max-height: 100%;  
+            max-width: 100%; 
+            width: auto;
+            height: auto;
+            position: absolute;  
+            top: 0;  
+            bottom: 0;  
+            left: 0;  
+            right: 0;  
+            margin: auto;
+        }
+    }
+    .floodtags{
+        background-color: rgb(0, 120, 185);
+    }
+    .duration{
+        float:right;
+        padding:18px;
+    }
+}
+@media screen and (max-width: 760px) {
+    .work{
+        padding:5px;
+        box-sizing: border-box;
+        .logo{
+            display: none;
+        }
+        .duration{
+            padding:20px 0px;
+        }
+    }
+}

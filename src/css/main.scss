@@ -2,6 +2,7 @@
 @import "home";
 @import "talen";
 @import "footer";
+@import "work";
 
 body{
     font-family: Arial, Helvetica, sans-serif;
@@ -20,6 +21,7 @@ body{
     .content{
         margin:auto;
         max-width: 900px;
+        width:100%;
         padding: 5px;
         height:100%;
         overflow-y: auto;

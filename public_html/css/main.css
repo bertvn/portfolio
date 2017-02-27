@@ -146,11 +146,29 @@
 
 @media screen and (max-width: 760px) {
   .language .description .ervaring {
-    width: 50% !important; }
+    width: 50%; }
     .language .description .ervaring ul {
       padding-left: 20px; }
       .language .description .ervaring ul li {
         padding-left: 0px; } }
+
+@media screen and (max-width: 450px) {
+  .language .description .ervaring {
+    width: 100%; }
+    .language .description .ervaring h3 {
+      margin: 0px;
+      margin-bottom: 5px; }
+      .language .description .ervaring h3:after {
+        content: " +";
+        float: right;
+        padding-right: 15px;
+        font-family: "Courier New", Courier, monospace; }
+      .language .description .ervaring h3.open:after {
+        content: " -"; }
+    .language .description .ervaring ul {
+      display: none; }
+    .language .description .ervaring .open {
+      display: block; } }
 
 /*footer*/
 .footer {
@@ -171,6 +189,45 @@
   .footer {
     display: none; } }
 
+/*work*/
+.work {
+  border: 1px solid red;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 5px; }
+  .work .logo {
+    float: left;
+    width: 150px;
+    height: 150px;
+    display: block;
+    position: relative;
+    margin-right: 5px; }
+    .work .logo .logo-img {
+      max-height: 100%;
+      max-width: 100%;
+      width: auto;
+      height: auto;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto; }
+  .work .floodtags {
+    background-color: #0078b9; }
+  .work .duration {
+    float: right;
+    padding: 18px; }
+
+@media screen and (max-width: 760px) {
+  .work {
+    padding: 5px;
+    box-sizing: border-box; }
+    .work .logo {
+      display: none; }
+    .work .duration {
+      padding: 20px 0px; } }
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
@@ -181,6 +238,7 @@ body {
   .content {
     margin: auto;
     max-width: 900px;
+    width: 100%;
     padding: 5px;
     height: 100%;
     overflow-y: auto;

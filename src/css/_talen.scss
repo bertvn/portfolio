@@ -21,12 +21,43 @@
     .language{
         .description{
             .ervaring{
-                width: 50% !important;
+                width: 50%;
                 ul{
                     padding-left: 20px;
                     li{
                         padding-left: 0px;
                     }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .language{
+        .description{
+            .ervaring{
+                width:100%;
+                h3{
+                    margin:0px;
+                    margin-bottom: 5px;
+
+                    &:after{
+                        content:" +";
+                        float: right;
+                        padding-right: 15px;
+                        font-family: "Courier New", Courier, monospace;
+                    }
+                    &.open:after{
+                        content:" -";
+                    }
+                }
+
+                ul{
+                    display:none;
+                }
+                .open{
+                    display:block;
                 }
             }
         }
