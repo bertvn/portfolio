@@ -67,7 +67,8 @@ gulp.task('release', function(){
             basepath: '@file'
         }))
         .pipe(prettify({indent_char: ' ', indent_size: 4}))
-        .pipe(replace("/profile/","/"))
+        .pipe(replace("/portfolio/","/"))
+        .pipe(replace("/portfolio","/"))
         .pipe(gulp.dest('./dist/'));
     gulp.src('./src/images/**/*.*')
         .pipe(gulp.dest('./dist/img'));
